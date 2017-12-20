@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context="com.example.owner.dailyfoodlogger.MainActivity"
     tools:ignore="NamespaceTypo">
 
@@ -13,17 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true" >
+        android:layout_alignParentTop="true">
     </ExpandableListView>
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
         android:layout_marginLeft="10dp"
         fab:menu_fab_size="normal"
         fab:menu_showShadow="true"
@@ -52,13 +54,12 @@
         fab:menu_labels_colorPressed="#444444"
         fab:menu_labels_colorRipple="#66FFFFFF"
         fab:menu_labels_showShadow="true"
-        fab:menu_labels_singleLine="false"
-        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_singleLine="true"
+        fab:menu_labels_ellipsize="end"
         fab:menu_labels_maxLines="-1"
-        fab:menu_labels_style="@style/MenuButtonsStyle"
         fab:menu_labels_position="left"
         fab:menu_openDirection="up"
-        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_backgroundColor="#DBFFFFFF"
         fab:menu_fab_label="Enter your meal"
         fab:menu_fab_show_animation="@anim/show_from_bottom"
         fab:menu_fab_hide_animation="@anim/hide_to_bottom">
@@ -67,29 +68,29 @@
             android:id="@+id/fab_add_breakfast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/breakfast_icon"
+            android:src="@drawable/fabicon_breakfast"
             fab:fab_size="mini"
             fab:fab_label="Add Breakfast" />
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/fab_add_lunch"
             android:layout_width="1px"
             android:layout_height="1px"
-            android:src="@drawable/breakfast"
+            android:src="@drawable/fabicon_lunch"
             fab:fab_size="mini"
             fab:fab_label="Add Lunch" />
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/fab_add_short_snacks"
             android:layout_width="1px"
             android:layout_height="1px"
-            android:src="@drawable/short_snacks"
+            android:src="@drawable/fabicon_short_snacks"
             fab:fab_size="mini"
             fab:fab_label="Add Short Snacks" />
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/fab_add_dinner"
             android:layout_width="1px"
             android:layout_height="1px"
-            android:src="@drawable/dinner"
+            android:src="@drawable/fabicon_dinner"
             fab:fab_size="mini"
             fab:fab_label="Add Dinner" />
     </com.github.clans.fab.FloatingActionMenu>
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
