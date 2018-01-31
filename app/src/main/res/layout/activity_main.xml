@@ -65,32 +65,12 @@
         fab:menu_fab_hide_animation="@anim/hide_to_bottom">
 
         <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/fab_add_breakfast"
+            android:id="@+id/fab_add_food"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/fabicon_breakfast"
             fab:fab_size="mini"
-            fab:fab_label="Add Breakfast" />
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/fab_add_lunch"
-            android:layout_width="1px"
-            android:layout_height="1px"
-            android:src="@drawable/fabicon_lunch"
-            fab:fab_size="mini"
-            fab:fab_label="Add Lunch" />
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/fab_add_short_snacks"
-            android:layout_width="1px"
-            android:layout_height="1px"
-            android:src="@drawable/fabicon_short_snacks"
-            fab:fab_size="mini"
-            fab:fab_label="Add Short Snacks" />
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/fab_add_dinner"
-            android:layout_width="1px"
-            android:layout_height="1px"
-            android:src="@drawable/fabicon_dinner"
-            fab:fab_size="mini"
-            fab:fab_label="Add Dinner" />
+            fab:fab_label="Add Food" />
+
     </com.github.clans.fab.FloatingActionMenu>
 </android.support.constraint.ConstraintLayout>
